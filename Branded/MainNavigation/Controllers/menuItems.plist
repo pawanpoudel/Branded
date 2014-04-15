@@ -13,6 +13,8 @@
 		<string>90</string>
 		<key>tapEventHandler</key>
 		<string>CCHProfileViewController</string>
+		<key>featureName</key>
+		<string>profile</string>
 	</dict>
 	<dict>
 		<key>iconName</key>
@@ -23,6 +25,8 @@
 		<string>Home</string>
 		<key>tapEventHandler</key>
 		<string>CCHHomeViewController</string>
+		<key>featureName</key>
+		<string>home</string>
 	</dict>
 	<dict>
 		<key>iconName</key>
@@ -33,6 +37,8 @@
 		<string>Settings</string>
 		<key>tapEventHandler</key>
 		<string>CCHSettingsViewController</string>
+		<key>featureName</key>
+		<string>settings</string>
 	</dict>
 </array>
 </plist>

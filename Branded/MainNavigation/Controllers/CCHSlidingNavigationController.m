@@ -11,11 +11,7 @@
 #import "CCHMenuViewController.h"
 #import "CCHMenuTableDataSource.h"
 #import "CCHMenuItem.h"
-#import "UIImage+Helper.h"
-
-static const NSInteger kProfileMenuItemIndex = 0;
-static const CGFloat kProfileIconWidth = 49.0f;
-static const CGFloat kProfileIconHeight = 49.0f;
+#import "CCHFeatureManager.h"
 
 @implementation CCHSlidingNavigationController
 
@@ -55,11 +51,14 @@ static const CGFloat kProfileIconHeight = 49.0f;
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"menuItems"
                                                          ofType:@"plist"];
     
-    NSArray *fileContent = [NSMutableArray arrayWithContentsOfFile:filePath];
-    return [self createMenuItemsFromArray:fileContent];
+    NSArray *fileContent = [NSArray arrayWithContentsOfFile:filePath];
+    NSMutableArray *menuItems = [self createMenuItemsFromArray:fileContent];
+    
+    [self removeDisabledFeaturesFromMenuItems:menuItems];
+    return menuItems;
 }
 
-- (NSArray *)createMenuItemsFromArray:(NSArray *)fileContent {
+- (NSMutableArray *)createMenuItemsFromArray:(NSArray *)fileContent {
     NSMutableArray *menuItems = [NSMutableArray arrayWithCapacity:[fileContent count]];
     
     [fileContent enumerateObjectsUsingBlock:^(NSDictionary *item, NSUInteger index, BOOL *stop) {
@@ -76,6 +75,15 @@ static const CGFloat kProfileIconHeight = 49.0f;
     }];
     
     return [menuItems copy];
+}
+
+- (void)removeDisabledFeaturesFromMenuItems:(NSMutableArray *)allItems {
+    [allItems enumerateObjectsUsingBlock:^(CCHMenuItem *menuItem, NSUInteger index, BOOL *stop) {
+        NSArray *features = [[CCHFeatureManager sharedInstance] features];
+        if ([features containsObject:menuItem.featureName] == NO) {
+            [allItems removeObject:menuItem];
+        }
+    }];
 }
 
 @end
