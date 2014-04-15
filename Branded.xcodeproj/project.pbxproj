@@ -106,6 +106,15 @@
 		15A072CE18FDCA80000EF640 /* Brand-C-Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A072CD18FDCA80000EF640 /* Brand-C-Images.xcassets */; };
 		15A072D018FDCA99000EF640 /* features.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15A072CF18FDCA99000EF640 /* features.plist */; };
 		15A072D218FDCAA2000EF640 /* features.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15A072D118FDCAA2000EF640 /* features.plist */; };
+		15A072D918FDD058000EF640 /* CCHLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A072D718FDD058000EF640 /* CCHLogInViewController.m */; };
+		15A072DA18FDD058000EF640 /* CCHLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A072D718FDD058000EF640 /* CCHLogInViewController.m */; };
+		15A072DB18FDD058000EF640 /* CCHLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A072D718FDD058000EF640 /* CCHLogInViewController.m */; };
+		15A072E018FDD06A000EF640 /* CCHLogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A072DF18FDD06A000EF640 /* CCHLogInViewController.xib */; };
+		15A072E118FDD06A000EF640 /* CCHLogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A072DF18FDD06A000EF640 /* CCHLogInViewController.xib */; };
+		15A072E218FDD06A000EF640 /* CCHLogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A072DF18FDD06A000EF640 /* CCHLogInViewController.xib */; };
+		15A072EA18FDD25F000EF640 /* CCHLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A072E918FDD25F000EF640 /* CCHLoginManager.m */; };
+		15A072EB18FDD25F000EF640 /* CCHLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A072E918FDD25F000EF640 /* CCHLoginManager.m */; };
+		15A072EC18FDD25F000EF640 /* CCHLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A072E918FDD25F000EF640 /* CCHLoginManager.m */; };
 		51D0DFA21D5E443A90AFA7DD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B14A88949FD8427FB326E04C /* libPods.a */; };
 		AD74CAE90E1D4610A58A8A77 /* libPods-BrandedTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 019876EEC8214B80838124D4 /* libPods-BrandedTests.a */; };
 /* End PBXBuildFile section */
@@ -183,6 +192,11 @@
 		15A072CD18FDCA80000EF640 /* Brand-C-Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Brand-C-Images.xcassets"; sourceTree = "<group>"; };
 		15A072CF18FDCA99000EF640 /* features.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = features.plist; sourceTree = "<group>"; };
 		15A072D118FDCAA2000EF640 /* features.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = features.plist; sourceTree = "<group>"; };
+		15A072D618FDD058000EF640 /* CCHLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHLogInViewController.h; sourceTree = "<group>"; };
+		15A072D718FDD058000EF640 /* CCHLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHLogInViewController.m; sourceTree = "<group>"; };
+		15A072DF18FDD06A000EF640 /* CCHLogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCHLogInViewController.xib; sourceTree = "<group>"; };
+		15A072E818FDD25F000EF640 /* CCHLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHLoginManager.h; sourceTree = "<group>"; };
+		15A072E918FDD25F000EF640 /* CCHLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHLoginManager.m; sourceTree = "<group>"; };
 		B14A88949FD8427FB326E04C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D992C3CD846342B6A5A8E9AF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F7A3B8D4FA394B25BA9A5657 /* Pods-BrandedTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrandedTests.xcconfig"; path = "Pods/Pods-BrandedTests.xcconfig"; sourceTree = "<group>"; };
@@ -283,6 +297,7 @@
 				15137E4E18FCC50E005E32B9 /* CCHAppDelegate.h */,
 				15137E4F18FCC50E005E32B9 /* CCHAppDelegate.m */,
 				15137E8C18FCCEDD005E32B9 /* Home */,
+				15A072D318FDCFFB000EF640 /* Login */,
 				15137E7718FCCBCC005E32B9 /* MainNavigation */,
 				15137EAF18FCD22D005E32B9 /* Profile */,
 				15137E8918FCCCC4005E32B9 /* Resources */,
@@ -584,6 +599,34 @@
 			path = "Brand-C";
 			sourceTree = "<group>";
 		};
+		15A072D318FDCFFB000EF640 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				15A072D418FDD02D000EF640 /* Controllers */,
+				15A072D518FDD02D000EF640 /* Views */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		15A072D418FDD02D000EF640 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				15A072D618FDD058000EF640 /* CCHLogInViewController.h */,
+				15A072D718FDD058000EF640 /* CCHLogInViewController.m */,
+				15A072E818FDD25F000EF640 /* CCHLoginManager.h */,
+				15A072E918FDD25F000EF640 /* CCHLoginManager.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		15A072D518FDD02D000EF640 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15A072DF18FDD06A000EF640 /* CCHLogInViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -715,6 +758,7 @@
 				15137E8718FCCBCC005E32B9 /* CCHInitialSlidingViewController.xib in Resources */,
 				15137EAE18FCD1A8005E32B9 /* CCHSettingsViewController.xib in Resources */,
 				15137E9818FCCF27005E32B9 /* CCHHomeViewController.xib in Resources */,
+				15A072E018FDD06A000EF640 /* CCHLogInViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -731,6 +775,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15A0728918FDC365000EF640 /* Images.xcassets in Resources */,
+				15A072E118FDD06A000EF640 /* CCHLogInViewController.xib in Resources */,
 				15A0728A18FDC365000EF640 /* menuItems.plist in Resources */,
 				15A0728B18FDC365000EF640 /* InfoPlist.strings in Resources */,
 				15A072D018FDCA99000EF640 /* features.plist in Resources */,
@@ -755,6 +800,7 @@
 				15A072D218FDCAA2000EF640 /* features.plist in Resources */,
 				15A072B918FDC9AE000EF640 /* menuItems.plist in Resources */,
 				15A072BA18FDC9AE000EF640 /* InfoPlist.strings in Resources */,
+				15A072E218FDD06A000EF640 /* CCHLogInViewController.xib in Resources */,
 				15A072BB18FDC9AE000EF640 /* CCHMenuViewController.xib in Resources */,
 				15A072BC18FDC9AE000EF640 /* CCHProfileViewController.xib in Resources */,
 				15A072CE18FDCA80000EF640 /* Brand-C-Images.xcassets in Resources */,
@@ -901,11 +947,13 @@
 				15137E8518FCCBCC005E32B9 /* CCHSlidingNavigationController.m in Sources */,
 				15137EA018FCCFF3005E32B9 /* UIImage+Helper.m in Sources */,
 				15A0726C18FDBCAD000EF640 /* CCHFeatureManager.m in Sources */,
+				15A072EA18FDD25F000EF640 /* CCHLoginManager.m in Sources */,
 				15137EBA18FCD265005E32B9 /* CCHProfileViewController.m in Sources */,
 				15137EC218FDAC73005E32B9 /* CCHMenuItem.m in Sources */,
 				15137EAD18FCD1A8005E32B9 /* CCHSettingsViewController.m in Sources */,
 				15137E9718FCCF27005E32B9 /* CCHHomeViewController.m in Sources */,
 				15137EA118FCCFF3005E32B9 /* CCHColor.m in Sources */,
+				15A072D918FDD058000EF640 /* CCHLogInViewController.m in Sources */,
 				15137EBE18FDAC08005E32B9 /* CCHMenuTableDataSource.m in Sources */,
 				15137E8318FCCBCC005E32B9 /* CCHInitialSlidingViewController.m in Sources */,
 				15137E8418FCCBCC005E32B9 /* CCHMenuViewController.m in Sources */,
@@ -931,11 +979,13 @@
 				15A0727518FDC365000EF640 /* CCHSlidingNavigationController.m in Sources */,
 				15A0727618FDC365000EF640 /* UIImage+Helper.m in Sources */,
 				15A0727718FDC365000EF640 /* CCHFeatureManager.m in Sources */,
+				15A072EB18FDD25F000EF640 /* CCHLoginManager.m in Sources */,
 				15A0727818FDC365000EF640 /* CCHProfileViewController.m in Sources */,
 				15A0727918FDC365000EF640 /* CCHMenuItem.m in Sources */,
 				15A0727A18FDC365000EF640 /* CCHSettingsViewController.m in Sources */,
 				15A0727B18FDC365000EF640 /* CCHHomeViewController.m in Sources */,
 				15A0727C18FDC365000EF640 /* CCHColor.m in Sources */,
+				15A072DA18FDD058000EF640 /* CCHLogInViewController.m in Sources */,
 				15A0727D18FDC365000EF640 /* CCHMenuTableDataSource.m in Sources */,
 				15A0727E18FDC365000EF640 /* CCHInitialSlidingViewController.m in Sources */,
 				15A0727F18FDC365000EF640 /* CCHMenuViewController.m in Sources */,
@@ -951,11 +1001,13 @@
 				15A072A418FDC9AE000EF640 /* CCHSlidingNavigationController.m in Sources */,
 				15A072A518FDC9AE000EF640 /* UIImage+Helper.m in Sources */,
 				15A072A618FDC9AE000EF640 /* CCHFeatureManager.m in Sources */,
+				15A072EC18FDD25F000EF640 /* CCHLoginManager.m in Sources */,
 				15A072A718FDC9AE000EF640 /* CCHProfileViewController.m in Sources */,
 				15A072A818FDC9AE000EF640 /* CCHMenuItem.m in Sources */,
 				15A072A918FDC9AE000EF640 /* CCHSettingsViewController.m in Sources */,
 				15A072AA18FDC9AE000EF640 /* CCHHomeViewController.m in Sources */,
 				15A072AB18FDC9AE000EF640 /* CCHColor.m in Sources */,
+				15A072DB18FDD058000EF640 /* CCHLogInViewController.m in Sources */,
 				15A072AC18FDC9AE000EF640 /* CCHMenuTableDataSource.m in Sources */,
 				15A072AD18FDC9AE000EF640 /* CCHInitialSlidingViewController.m in Sources */,
 				15A072AE18FDC9AE000EF640 /* CCHMenuViewController.m in Sources */,

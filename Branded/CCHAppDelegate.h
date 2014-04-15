@@ -11,5 +11,8 @@
 @interface CCHAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (readonly, nonatomic) UINavigationController *loginNavController;
+
++ (CCHAppDelegate *)sharedAppDelegate;
 
 @end

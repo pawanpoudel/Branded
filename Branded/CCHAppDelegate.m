@@ -10,10 +10,12 @@
 #import "CCHInitialSlidingViewController.h"
 #import "CCHSlidingNavigationController.h"
 #import "CCHHomeViewController.h"
+#import "CCHLogInViewController.h"
 
 @interface CCHAppDelegate()
 
 @property (nonatomic) CCHSlidingNavigationController *rootNavController;
+@property (readwrite, nonatomic) UINavigationController *loginNavController;
 
 @end
 
@@ -28,6 +30,16 @@
     }
     
     return _rootNavController;
+}
+
+- (UINavigationController *)loginNavController {
+    if (_loginNavController == nil) {
+        CCHLogInViewController *loginViewController = [[CCHLogInViewController alloc] init];
+        _loginNavController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
+        _loginNavController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    }
+    
+    return _loginNavController;
 }
 
 #pragma mark - App lifecycle
@@ -48,6 +60,12 @@
     CCHInitialSlidingViewController *slidingViewController = [[CCHInitialSlidingViewController alloc] init];
     slidingViewController.topViewController = self.rootNavController;
     self.window.rootViewController = slidingViewController;
+}
+
+#pragma mark - Convenience methods
+
++ (CCHAppDelegate *)sharedAppDelegate {
+    return (CCHAppDelegate *)[[UIApplication sharedApplication] delegate];
 }
 
 @end

@@ -8,6 +8,7 @@
 
 #import "CCHHomeViewController.h"
 #import "ECSlidingViewController.h"
+#import "CCHAppDelegate.h"
 
 @implementation CCHHomeViewController
 
@@ -16,6 +17,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self configureNavigationBar];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self presentRegistrationView];
+}
+
+- (void)presentRegistrationView {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    BOOL loggedIn = [defaults boolForKey:@"kLoggedIn"];
+    
+    if (loggedIn == NO) {
+        [self presentViewController:[CCHAppDelegate sharedAppDelegate].loginNavController
+                           animated:NO
+                         completion:nil];        
+    }
 }
 
 - (void)configureNavigationBar {
