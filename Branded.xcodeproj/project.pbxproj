@@ -74,6 +74,38 @@
 		15A0729B18FDC3B1000EF640 /* Brand-B-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15A0729A18FDC3B1000EF640 /* Brand-B-Info.plist */; };
 		15A0729D18FDC471000EF640 /* Brand-B-Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A0729C18FDC471000EF640 /* Brand-B-Images.xcassets */; };
 		15A0729F18FDC639000EF640 /* colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15A0729E18FDC639000EF640 /* colors.plist */; };
+		15A072A318FDC9AE000EF640 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15137E4B18FCC50E005E32B9 /* main.m */; };
+		15A072A418FDC9AE000EF640 /* CCHSlidingNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15137E7E18FCCBCC005E32B9 /* CCHSlidingNavigationController.m */; };
+		15A072A518FDC9AE000EF640 /* UIImage+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 15137E9C18FCCFF3005E32B9 /* UIImage+Helper.m */; };
+		15A072A618FDC9AE000EF640 /* CCHFeatureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A0726B18FDBCAD000EF640 /* CCHFeatureManager.m */; };
+		15A072A718FDC9AE000EF640 /* CCHProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15137EB718FCD265005E32B9 /* CCHProfileViewController.m */; };
+		15A072A818FDC9AE000EF640 /* CCHMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 15137EC118FDAC73005E32B9 /* CCHMenuItem.m */; };
+		15A072A918FDC9AE000EF640 /* CCHSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15137EAA18FCD1A8005E32B9 /* CCHSettingsViewController.m */; };
+		15A072AA18FDC9AE000EF640 /* CCHHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15137E9418FCCF27005E32B9 /* CCHHomeViewController.m */; };
+		15A072AB18FDC9AE000EF640 /* CCHColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 15137E9F18FCCFF3005E32B9 /* CCHColor.m */; };
+		15A072AC18FDC9AE000EF640 /* CCHMenuTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 15137EBD18FDAC08005E32B9 /* CCHMenuTableDataSource.m */; };
+		15A072AD18FDC9AE000EF640 /* CCHInitialSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15137E7A18FCCBCC005E32B9 /* CCHInitialSlidingViewController.m */; };
+		15A072AE18FDC9AE000EF640 /* CCHMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15137E7C18FCCBCC005E32B9 /* CCHMenuViewController.m */; };
+		15A072AF18FDC9AE000EF640 /* CCHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15137E4F18FCC50E005E32B9 /* CCHAppDelegate.m */; };
+		15A072B118FDC9AE000EF640 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15137E3F18FCC50E005E32B9 /* CoreGraphics.framework */; };
+		15A072B218FDC9AE000EF640 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15137E4318FCC50E005E32B9 /* CoreData.framework */; };
+		15A072B318FDC9AE000EF640 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15137E4118FCC50E005E32B9 /* UIKit.framework */; };
+		15A072B418FDC9AE000EF640 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15137E3D18FCC50E005E32B9 /* Foundation.framework */; };
+		15A072B518FDC9AE000EF640 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B14A88949FD8427FB326E04C /* libPods.a */; };
+		15A072B818FDC9AE000EF640 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A0725F18FDB8EB000EF640 /* Images.xcassets */; };
+		15A072B918FDC9AE000EF640 /* menuItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15137E7F18FCCBCC005E32B9 /* menuItems.plist */; };
+		15A072BA18FDC9AE000EF640 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15137E4818FCC50E005E32B9 /* InfoPlist.strings */; };
+		15A072BB18FDC9AE000EF640 /* CCHMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15137E8218FCCBCC005E32B9 /* CCHMenuViewController.xib */; };
+		15A072BC18FDC9AE000EF640 /* CCHProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15137EB918FCD265005E32B9 /* CCHProfileViewController.xib */; };
+		15A072BD18FDC9AE000EF640 /* features.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15A0726718FDB9FD000EF640 /* features.plist */; };
+		15A072BE18FDC9AE000EF640 /* colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15A0726418FDB9B5000EF640 /* colors.plist */; };
+		15A072BF18FDC9AE000EF640 /* CCHInitialSlidingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15137E8118FCCBCC005E32B9 /* CCHInitialSlidingViewController.xib */; };
+		15A072C018FDC9AE000EF640 /* CCHSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15137EAC18FCD1A8005E32B9 /* CCHSettingsViewController.xib */; };
+		15A072C118FDC9AE000EF640 /* CCHHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15137E9618FCCF27005E32B9 /* CCHHomeViewController.xib */; };
+		15A072CC18FDCA52000EF640 /* colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15A072CB18FDCA52000EF640 /* colors.plist */; };
+		15A072CE18FDCA80000EF640 /* Brand-C-Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A072CD18FDCA80000EF640 /* Brand-C-Images.xcassets */; };
+		15A072D018FDCA99000EF640 /* features.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15A072CF18FDCA99000EF640 /* features.plist */; };
+		15A072D218FDCAA2000EF640 /* features.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15A072D118FDCAA2000EF640 /* features.plist */; };
 		51D0DFA21D5E443A90AFA7DD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B14A88949FD8427FB326E04C /* libPods.a */; };
 		AD74CAE90E1D4610A58A8A77 /* libPods-BrandedTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 019876EEC8214B80838124D4 /* libPods-BrandedTests.a */; };
 /* End PBXBuildFile section */
@@ -145,6 +177,12 @@
 		15A0729A18FDC3B1000EF640 /* Brand-B-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Brand-B-Info.plist"; sourceTree = "<group>"; };
 		15A0729C18FDC471000EF640 /* Brand-B-Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Brand-B-Images.xcassets"; sourceTree = "<group>"; };
 		15A0729E18FDC639000EF640 /* colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colors.plist; sourceTree = "<group>"; };
+		15A072C618FDC9AE000EF640 /* Brand-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brand-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15A072C918FDC9F5000EF640 /* Brand-C-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Brand-C-Info.plist"; sourceTree = "<group>"; };
+		15A072CB18FDCA52000EF640 /* colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colors.plist; sourceTree = "<group>"; };
+		15A072CD18FDCA80000EF640 /* Brand-C-Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Brand-C-Images.xcassets"; sourceTree = "<group>"; };
+		15A072CF18FDCA99000EF640 /* features.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = features.plist; sourceTree = "<group>"; };
+		15A072D118FDCAA2000EF640 /* features.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = features.plist; sourceTree = "<group>"; };
 		B14A88949FD8427FB326E04C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D992C3CD846342B6A5A8E9AF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F7A3B8D4FA394B25BA9A5657 /* Pods-BrandedTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrandedTests.xcconfig"; path = "Pods/Pods-BrandedTests.xcconfig"; sourceTree = "<group>"; };
@@ -187,6 +225,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15A072B018FDC9AE000EF640 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15A072B118FDC9AE000EF640 /* CoreGraphics.framework in Frameworks */,
+				15A072B218FDC9AE000EF640 /* CoreData.framework in Frameworks */,
+				15A072B318FDC9AE000EF640 /* UIKit.framework in Frameworks */,
+				15A072B418FDC9AE000EF640 /* Foundation.framework in Frameworks */,
+				15A072B518FDC9AE000EF640 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -208,6 +258,7 @@
 				15137E3A18FCC50E005E32B9 /* Brand-A.app */,
 				15137E5A18FCC50E005E32B9 /* BrandedTests.xctest */,
 				15A0729718FDC365000EF640 /* Brand-B.app */,
+				15A072C618FDC9AE000EF640 /* Brand-C.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -312,6 +363,7 @@
 				15A0725E18FDB8EB000EF640 /* Common */,
 				15A0725A18FDB8A7000EF640 /* Brand-A */,
 				15A0729918FDC38F000EF640 /* Brand-B */,
+				15A072C818FDC9F5000EF640 /* Brand-C */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -515,9 +567,21 @@
 			children = (
 				15A0729A18FDC3B1000EF640 /* Brand-B-Info.plist */,
 				15A0729E18FDC639000EF640 /* colors.plist */,
+				15A072CF18FDCA99000EF640 /* features.plist */,
 				15A0729C18FDC471000EF640 /* Brand-B-Images.xcassets */,
 			);
 			path = "Brand-B";
+			sourceTree = "<group>";
+		};
+		15A072C818FDC9F5000EF640 /* Brand-C */ = {
+			isa = PBXGroup;
+			children = (
+				15A072C918FDC9F5000EF640 /* Brand-C-Info.plist */,
+				15A072CB18FDCA52000EF640 /* colors.plist */,
+				15A072D118FDCAA2000EF640 /* features.plist */,
+				15A072CD18FDCA80000EF640 /* Brand-C-Images.xcassets */,
+			);
+			path = "Brand-C";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -581,6 +645,25 @@
 			productReference = 15A0729718FDC365000EF640 /* Brand-B.app */;
 			productType = "com.apple.product-type.application";
 		};
+		15A072A018FDC9AE000EF640 /* Brand-C */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15A072C318FDC9AE000EF640 /* Build configuration list for PBXNativeTarget "Brand-C" */;
+			buildPhases = (
+				15A072A118FDC9AE000EF640 /* Check Pods Manifest.lock */,
+				15A072A218FDC9AE000EF640 /* Sources */,
+				15A072B018FDC9AE000EF640 /* Frameworks */,
+				15A072B618FDC9AE000EF640 /* Resources */,
+				15A072C218FDC9AE000EF640 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Brand-C";
+			productName = Branded;
+			productReference = 15A072C618FDC9AE000EF640 /* Brand-C.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -610,6 +693,7 @@
 			targets = (
 				15137E3918FCC50E005E32B9 /* Brand-A */,
 				15A0727118FDC365000EF640 /* Brand-B */,
+				15A072A018FDC9AE000EF640 /* Brand-C */,
 				15137E5918FCC50E005E32B9 /* BrandedTests */,
 			);
 		};
@@ -649,6 +733,7 @@
 				15A0728918FDC365000EF640 /* Images.xcassets in Resources */,
 				15A0728A18FDC365000EF640 /* menuItems.plist in Resources */,
 				15A0728B18FDC365000EF640 /* InfoPlist.strings in Resources */,
+				15A072D018FDCA99000EF640 /* features.plist in Resources */,
 				15A0728C18FDC365000EF640 /* CCHMenuViewController.xib in Resources */,
 				15A0728D18FDC365000EF640 /* CCHProfileViewController.xib in Resources */,
 				15A0729D18FDC471000EF640 /* Brand-B-Images.xcassets in Resources */,
@@ -659,6 +744,26 @@
 				15A0729218FDC365000EF640 /* CCHHomeViewController.xib in Resources */,
 				15A0729F18FDC639000EF640 /* colors.plist in Resources */,
 				15A0729B18FDC3B1000EF640 /* Brand-B-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15A072B618FDC9AE000EF640 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15A072B818FDC9AE000EF640 /* Images.xcassets in Resources */,
+				15A072D218FDCAA2000EF640 /* features.plist in Resources */,
+				15A072B918FDC9AE000EF640 /* menuItems.plist in Resources */,
+				15A072BA18FDC9AE000EF640 /* InfoPlist.strings in Resources */,
+				15A072BB18FDC9AE000EF640 /* CCHMenuViewController.xib in Resources */,
+				15A072BC18FDC9AE000EF640 /* CCHProfileViewController.xib in Resources */,
+				15A072CE18FDCA80000EF640 /* Brand-C-Images.xcassets in Resources */,
+				15A072BD18FDC9AE000EF640 /* features.plist in Resources */,
+				15A072CC18FDCA52000EF640 /* colors.plist in Resources */,
+				15A072BE18FDC9AE000EF640 /* colors.plist in Resources */,
+				15A072BF18FDC9AE000EF640 /* CCHInitialSlidingViewController.xib in Resources */,
+				15A072C018FDC9AE000EF640 /* CCHSettingsViewController.xib in Resources */,
+				15A072C118FDC9AE000EF640 /* CCHHomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,6 +786,36 @@
 			showEnvVarsInLog = 0;
 		};
 		15A0729318FDC365000EF640 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15A072A118FDC9AE000EF640 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		15A072C218FDC9AE000EF640 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -805,6 +940,26 @@
 				15A0727E18FDC365000EF640 /* CCHInitialSlidingViewController.m in Sources */,
 				15A0727F18FDC365000EF640 /* CCHMenuViewController.m in Sources */,
 				15A0728018FDC365000EF640 /* CCHAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15A072A218FDC9AE000EF640 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15A072A318FDC9AE000EF640 /* main.m in Sources */,
+				15A072A418FDC9AE000EF640 /* CCHSlidingNavigationController.m in Sources */,
+				15A072A518FDC9AE000EF640 /* UIImage+Helper.m in Sources */,
+				15A072A618FDC9AE000EF640 /* CCHFeatureManager.m in Sources */,
+				15A072A718FDC9AE000EF640 /* CCHProfileViewController.m in Sources */,
+				15A072A818FDC9AE000EF640 /* CCHMenuItem.m in Sources */,
+				15A072A918FDC9AE000EF640 /* CCHSettingsViewController.m in Sources */,
+				15A072AA18FDC9AE000EF640 /* CCHHomeViewController.m in Sources */,
+				15A072AB18FDC9AE000EF640 /* CCHColor.m in Sources */,
+				15A072AC18FDC9AE000EF640 /* CCHMenuTableDataSource.m in Sources */,
+				15A072AD18FDC9AE000EF640 /* CCHInitialSlidingViewController.m in Sources */,
+				15A072AE18FDC9AE000EF640 /* CCHMenuViewController.m in Sources */,
+				15A072AF18FDC9AE000EF640 /* CCHAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1010,6 +1165,36 @@
 			};
 			name = Release;
 		};
+		15A072C418FDC9AE000EF640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D992C3CD846342B6A5A8E9AF /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Branded/Branded-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Branded/Resources/Brand-C/Brand-C-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "Brand-C";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		15A072C518FDC9AE000EF640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D992C3CD846342B6A5A8E9AF /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Branded/Branded-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Branded/Resources/Brand-C/Brand-C-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "Brand-C";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1045,6 +1230,15 @@
 			buildConfigurations = (
 				15A0729518FDC365000EF640 /* Debug */,
 				15A0729618FDC365000EF640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15A072C318FDC9AE000EF640 /* Build configuration list for PBXNativeTarget "Brand-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15A072C418FDC9AE000EF640 /* Debug */,
+				15A072C518FDC9AE000EF640 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
