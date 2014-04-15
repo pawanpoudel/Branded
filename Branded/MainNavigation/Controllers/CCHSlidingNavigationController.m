@@ -52,13 +52,12 @@
                                                          ofType:@"plist"];
     
     NSArray *fileContent = [NSArray arrayWithContentsOfFile:filePath];
-    NSMutableArray *menuItems = [self createMenuItemsFromArray:fileContent];
+    NSArray *menuItems = [self createMenuItemsFromArray:fileContent];
     
-    [self removeDisabledFeaturesFromMenuItems:menuItems];
-    return menuItems;
+    return [self removeDisabledFeaturesFromMenuItems:menuItems];
 }
 
-- (NSMutableArray *)createMenuItemsFromArray:(NSArray *)fileContent {
+- (NSArray *)createMenuItemsFromArray:(NSArray *)fileContent {
     NSMutableArray *menuItems = [NSMutableArray arrayWithCapacity:[fileContent count]];
     
     [fileContent enumerateObjectsUsingBlock:^(NSDictionary *item, NSUInteger index, BOOL *stop) {
@@ -77,13 +76,17 @@
     return [menuItems copy];
 }
 
-- (void)removeDisabledFeaturesFromMenuItems:(NSMutableArray *)allItems {
+- (NSArray *)removeDisabledFeaturesFromMenuItems:(NSArray *)allItems {
+    NSMutableArray *enabledMenuItems = [NSMutableArray array];
+    
     [allItems enumerateObjectsUsingBlock:^(CCHMenuItem *menuItem, NSUInteger index, BOOL *stop) {
         NSArray *features = [[CCHFeatureManager sharedInstance] features];
-        if ([features containsObject:menuItem.featureName] == NO) {
-            [allItems removeObject:menuItem];
+        if ([features containsObject:menuItem.featureName]) {
+            [enabledMenuItems addObject:menuItem];
         }
     }];
+    
+    return enabledMenuItems;
 }
 
 @end
