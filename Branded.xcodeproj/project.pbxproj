@@ -110,6 +110,12 @@
 		15A072EA18FDD25F000EF640 /* CCHLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A072E918FDD25F000EF640 /* CCHLoginManager.m */; };
 		15A072EB18FDD25F000EF640 /* CCHLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A072E918FDD25F000EF640 /* CCHLoginManager.m */; };
 		15A072EC18FDD25F000EF640 /* CCHLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A072E918FDD25F000EF640 /* CCHLoginManager.m */; };
+		15A072EE18FDEA84000EF640 /* appSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15A072ED18FDEA84000EF640 /* appSetting.plist */; };
+		15A072F018FDEABF000EF640 /* appSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15A072EF18FDEABF000EF640 /* appSetting.plist */; };
+		15A072F218FDEB20000EF640 /* appSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15A072F118FDEB20000EF640 /* appSetting.plist */; };
+		15A072F518FDEBB2000EF640 /* CCHAppSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A072F418FDEBB2000EF640 /* CCHAppSetting.m */; };
+		15A072F618FDEBB2000EF640 /* CCHAppSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A072F418FDEBB2000EF640 /* CCHAppSetting.m */; };
+		15A072F718FDEBB2000EF640 /* CCHAppSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A072F418FDEBB2000EF640 /* CCHAppSetting.m */; };
 		51D0DFA21D5E443A90AFA7DD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B14A88949FD8427FB326E04C /* libPods.a */; };
 		AD74CAE90E1D4610A58A8A77 /* libPods-BrandedTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 019876EEC8214B80838124D4 /* libPods-BrandedTests.a */; };
 /* End PBXBuildFile section */
@@ -192,6 +198,11 @@
 		15A072DF18FDD06A000EF640 /* CCHLogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCHLogInViewController.xib; sourceTree = "<group>"; };
 		15A072E818FDD25F000EF640 /* CCHLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHLoginManager.h; sourceTree = "<group>"; };
 		15A072E918FDD25F000EF640 /* CCHLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHLoginManager.m; sourceTree = "<group>"; };
+		15A072ED18FDEA84000EF640 /* appSetting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = appSetting.plist; sourceTree = "<group>"; };
+		15A072EF18FDEABF000EF640 /* appSetting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = appSetting.plist; sourceTree = "<group>"; };
+		15A072F118FDEB20000EF640 /* appSetting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = appSetting.plist; sourceTree = "<group>"; };
+		15A072F318FDEBB2000EF640 /* CCHAppSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHAppSetting.h; sourceTree = "<group>"; };
+		15A072F418FDEBB2000EF640 /* CCHAppSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHAppSetting.m; sourceTree = "<group>"; };
 		B14A88949FD8427FB326E04C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D992C3CD846342B6A5A8E9AF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F7A3B8D4FA394B25BA9A5657 /* Pods-BrandedTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrandedTests.xcconfig"; path = "Pods/Pods-BrandedTests.xcconfig"; sourceTree = "<group>"; };
@@ -531,6 +542,7 @@
 		15A0725A18FDB8A7000EF640 /* Brand-A */ = {
 			isa = PBXGroup;
 			children = (
+				15A072ED18FDEA84000EF640 /* appSetting.plist */,
 				15A0726318FDB9B5000EF640 /* Brand-A-Info.plist */,
 				15A0726418FDB9B5000EF640 /* colors.plist */,
 				15A0726718FDB9FD000EF640 /* features.plist */,
@@ -550,6 +562,8 @@
 		15A0726918FDBCAD000EF640 /* AppManagement */ = {
 			isa = PBXGroup;
 			children = (
+				15A072F318FDEBB2000EF640 /* CCHAppSetting.h */,
+				15A072F418FDEBB2000EF640 /* CCHAppSetting.m */,
 				15A0726A18FDBCAD000EF640 /* CCHFeatureManager.h */,
 				15A0726B18FDBCAD000EF640 /* CCHFeatureManager.m */,
 			);
@@ -575,6 +589,7 @@
 		15A0729918FDC38F000EF640 /* Brand-B */ = {
 			isa = PBXGroup;
 			children = (
+				15A072EF18FDEABF000EF640 /* appSetting.plist */,
 				15A0729A18FDC3B1000EF640 /* Brand-B-Info.plist */,
 				15A0729E18FDC639000EF640 /* colors.plist */,
 				15A072CF18FDCA99000EF640 /* features.plist */,
@@ -586,6 +601,7 @@
 		15A072C818FDC9F5000EF640 /* Brand-C */ = {
 			isa = PBXGroup;
 			children = (
+				15A072F118FDEB20000EF640 /* appSetting.plist */,
 				15A072C918FDC9F5000EF640 /* Brand-C-Info.plist */,
 				15A072CB18FDCA52000EF640 /* colors.plist */,
 				15A072D118FDCAA2000EF640 /* features.plist */,
@@ -750,6 +766,7 @@
 				15137EBB18FCD265005E32B9 /* CCHProfileViewController.xib in Resources */,
 				15A0726818FDB9FD000EF640 /* features.plist in Resources */,
 				15A0726618FDB9B5000EF640 /* colors.plist in Resources */,
+				15A072EE18FDEA84000EF640 /* appSetting.plist in Resources */,
 				15137E8718FCCBCC005E32B9 /* CCHInitialSlidingViewController.xib in Resources */,
 				15137EAE18FCD1A8005E32B9 /* CCHSettingsViewController.xib in Resources */,
 				15137E9818FCCF27005E32B9 /* CCHHomeViewController.xib in Resources */,
@@ -777,6 +794,7 @@
 				15A0728C18FDC365000EF640 /* CCHMenuViewController.xib in Resources */,
 				15A0728D18FDC365000EF640 /* CCHProfileViewController.xib in Resources */,
 				15A0729D18FDC471000EF640 /* Brand-B-Images.xcassets in Resources */,
+				15A072F018FDEABF000EF640 /* appSetting.plist in Resources */,
 				15A0729018FDC365000EF640 /* CCHInitialSlidingViewController.xib in Resources */,
 				15A0729118FDC365000EF640 /* CCHSettingsViewController.xib in Resources */,
 				15A0729218FDC365000EF640 /* CCHHomeViewController.xib in Resources */,
@@ -796,6 +814,7 @@
 				15A072BB18FDC9AE000EF640 /* CCHMenuViewController.xib in Resources */,
 				15A072BC18FDC9AE000EF640 /* CCHProfileViewController.xib in Resources */,
 				15A072CE18FDCA80000EF640 /* Brand-C-Images.xcassets in Resources */,
+				15A072F218FDEB20000EF640 /* appSetting.plist in Resources */,
 				15A072CC18FDCA52000EF640 /* colors.plist in Resources */,
 				15A072BF18FDC9AE000EF640 /* CCHInitialSlidingViewController.xib in Resources */,
 				15A072C018FDC9AE000EF640 /* CCHSettingsViewController.xib in Resources */,
@@ -942,6 +961,7 @@
 				15137EC218FDAC73005E32B9 /* CCHMenuItem.m in Sources */,
 				15137EAD18FCD1A8005E32B9 /* CCHSettingsViewController.m in Sources */,
 				15137E9718FCCF27005E32B9 /* CCHHomeViewController.m in Sources */,
+				15A072F518FDEBB2000EF640 /* CCHAppSetting.m in Sources */,
 				15137EA118FCCFF3005E32B9 /* CCHColor.m in Sources */,
 				15A072D918FDD058000EF640 /* CCHLogInViewController.m in Sources */,
 				15137EBE18FDAC08005E32B9 /* CCHMenuTableDataSource.m in Sources */,
@@ -974,6 +994,7 @@
 				15A0727918FDC365000EF640 /* CCHMenuItem.m in Sources */,
 				15A0727A18FDC365000EF640 /* CCHSettingsViewController.m in Sources */,
 				15A0727B18FDC365000EF640 /* CCHHomeViewController.m in Sources */,
+				15A072F618FDEBB2000EF640 /* CCHAppSetting.m in Sources */,
 				15A0727C18FDC365000EF640 /* CCHColor.m in Sources */,
 				15A072DA18FDD058000EF640 /* CCHLogInViewController.m in Sources */,
 				15A0727D18FDC365000EF640 /* CCHMenuTableDataSource.m in Sources */,
@@ -996,6 +1017,7 @@
 				15A072A818FDC9AE000EF640 /* CCHMenuItem.m in Sources */,
 				15A072A918FDC9AE000EF640 /* CCHSettingsViewController.m in Sources */,
 				15A072AA18FDC9AE000EF640 /* CCHHomeViewController.m in Sources */,
+				15A072F718FDEBB2000EF640 /* CCHAppSetting.m in Sources */,
 				15A072AB18FDC9AE000EF640 /* CCHColor.m in Sources */,
 				15A072DB18FDD058000EF640 /* CCHLogInViewController.m in Sources */,
 				15A072AC18FDC9AE000EF640 /* CCHMenuTableDataSource.m in Sources */,
