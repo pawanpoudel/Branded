@@ -66,12 +66,9 @@
 		15A0728B18FDC365000EF640 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15137E4818FCC50E005E32B9 /* InfoPlist.strings */; };
 		15A0728C18FDC365000EF640 /* CCHMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15137E8218FCCBCC005E32B9 /* CCHMenuViewController.xib */; };
 		15A0728D18FDC365000EF640 /* CCHProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15137EB918FCD265005E32B9 /* CCHProfileViewController.xib */; };
-		15A0728E18FDC365000EF640 /* features.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15A0726718FDB9FD000EF640 /* features.plist */; };
-		15A0728F18FDC365000EF640 /* colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15A0726418FDB9B5000EF640 /* colors.plist */; };
 		15A0729018FDC365000EF640 /* CCHInitialSlidingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15137E8118FCCBCC005E32B9 /* CCHInitialSlidingViewController.xib */; };
 		15A0729118FDC365000EF640 /* CCHSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15137EAC18FCD1A8005E32B9 /* CCHSettingsViewController.xib */; };
 		15A0729218FDC365000EF640 /* CCHHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15137E9618FCCF27005E32B9 /* CCHHomeViewController.xib */; };
-		15A0729B18FDC3B1000EF640 /* Brand-B-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15A0729A18FDC3B1000EF640 /* Brand-B-Info.plist */; };
 		15A0729D18FDC471000EF640 /* Brand-B-Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A0729C18FDC471000EF640 /* Brand-B-Images.xcassets */; };
 		15A0729F18FDC639000EF640 /* colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15A0729E18FDC639000EF640 /* colors.plist */; };
 		15A072A318FDC9AE000EF640 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15137E4B18FCC50E005E32B9 /* main.m */; };
@@ -97,8 +94,6 @@
 		15A072BA18FDC9AE000EF640 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15137E4818FCC50E005E32B9 /* InfoPlist.strings */; };
 		15A072BB18FDC9AE000EF640 /* CCHMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15137E8218FCCBCC005E32B9 /* CCHMenuViewController.xib */; };
 		15A072BC18FDC9AE000EF640 /* CCHProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15137EB918FCD265005E32B9 /* CCHProfileViewController.xib */; };
-		15A072BD18FDC9AE000EF640 /* features.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15A0726718FDB9FD000EF640 /* features.plist */; };
-		15A072BE18FDC9AE000EF640 /* colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15A0726418FDB9B5000EF640 /* colors.plist */; };
 		15A072BF18FDC9AE000EF640 /* CCHInitialSlidingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15137E8118FCCBCC005E32B9 /* CCHInitialSlidingViewController.xib */; };
 		15A072C018FDC9AE000EF640 /* CCHSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15137EAC18FCD1A8005E32B9 /* CCHSettingsViewController.xib */; };
 		15A072C118FDC9AE000EF640 /* CCHHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15137E9618FCCF27005E32B9 /* CCHHomeViewController.xib */; };
@@ -782,13 +777,10 @@
 				15A0728C18FDC365000EF640 /* CCHMenuViewController.xib in Resources */,
 				15A0728D18FDC365000EF640 /* CCHProfileViewController.xib in Resources */,
 				15A0729D18FDC471000EF640 /* Brand-B-Images.xcassets in Resources */,
-				15A0728E18FDC365000EF640 /* features.plist in Resources */,
-				15A0728F18FDC365000EF640 /* colors.plist in Resources */,
 				15A0729018FDC365000EF640 /* CCHInitialSlidingViewController.xib in Resources */,
 				15A0729118FDC365000EF640 /* CCHSettingsViewController.xib in Resources */,
 				15A0729218FDC365000EF640 /* CCHHomeViewController.xib in Resources */,
 				15A0729F18FDC639000EF640 /* colors.plist in Resources */,
-				15A0729B18FDC3B1000EF640 /* Brand-B-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -804,9 +796,7 @@
 				15A072BB18FDC9AE000EF640 /* CCHMenuViewController.xib in Resources */,
 				15A072BC18FDC9AE000EF640 /* CCHProfileViewController.xib in Resources */,
 				15A072CE18FDCA80000EF640 /* Brand-C-Images.xcassets in Resources */,
-				15A072BD18FDC9AE000EF640 /* features.plist in Resources */,
 				15A072CC18FDCA52000EF640 /* colors.plist in Resources */,
-				15A072BE18FDC9AE000EF640 /* colors.plist in Resources */,
 				15A072BF18FDC9AE000EF640 /* CCHInitialSlidingViewController.xib in Resources */,
 				15A072C018FDC9AE000EF640 /* CCHSettingsViewController.xib in Resources */,
 				15A072C118FDC9AE000EF640 /* CCHHomeViewController.xib in Resources */,
