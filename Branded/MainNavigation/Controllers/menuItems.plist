@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>iconName</key>
+		<string>iconAvatarDefault.png</string>
+		<key>title</key>
+		<string>Github User</string>
+		<key>subtitle</key>
+		<string>Tap to view profile</string>
+		<key>rowHeight</key>
+		<string>90</string>
+		<key>tapEventHandler</key>
+		<string>CCHProfileViewController</string>
+	</dict>
+	<dict>
+		<key>iconName</key>
+		<string>iconHome.png</string>
+		<key>backgroundImageName</key>
+		<string>bgMenuCell.png</string>
+		<key>title</key>
+		<string>Home</string>
+		<key>tapEventHandler</key>
+		<string>CCHHomeViewController</string>
+	</dict>
+	<dict>
+		<key>iconName</key>
+		<string>iconSettings.png</string>
+		<key>backgroundImageName</key>
+		<string>bgMenuCell.png</string>
+		<key>title</key>
+		<string>Settings</string>
+		<key>tapEventHandler</key>
+		<string>CCHSettingsViewController</string>
+	</dict>
+</array>
+</plist>
