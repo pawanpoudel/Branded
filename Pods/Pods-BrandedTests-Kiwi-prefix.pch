@@ -3,6 +3,4 @@
 #endif
 
 #import "Pods-BrandedTests-environment.h"
-
-
 #import <XCTest/XCTest.h>
