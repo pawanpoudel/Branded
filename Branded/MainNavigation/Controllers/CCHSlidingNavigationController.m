@@ -11,6 +11,8 @@
 #import "CCHMenuViewController.h"
 #import "CCHMenuTableDataSource.h"
 #import "CCHMenuItem.h"
+#import "CCHMenuItemsPlistReader.h"
+#import "CCHMenuItemBuilder.h"
 #import "CCHFeatureManager.h"
 
 @implementation CCHSlidingNavigationController
@@ -33,8 +35,17 @@
 
 - (void)setupSlidingViewController {
     if (![self.slidingViewController.underLeftViewController isKindOfClass:[CCHMenuViewController class]]) {
+        CCHMenuItemsPlistReader *menuItemsPlistReader = [[CCHMenuItemsPlistReader alloc] init];
+        menuItemsPlistReader.plistToReadFrom = @"menuItems";
+        
+        CCHMenuItemBuilder *menuItemBuilder = [[CCHMenuItemBuilder alloc] init];
+        [menuItemBuilder setMenuReader:menuItemsPlistReader];
+        
+        NSArray *enabledFeatures = [[CCHFeatureManager sharedInstance] features];
+        NSArray *menuItems = [menuItemBuilder menuItemsForEnabledFeatures:enabledFeatures];
+        
         CCHMenuTableDataSource *dataSource = [[CCHMenuTableDataSource alloc] init];
-        [dataSource setMenuItems:self.menuItems];
+        [dataSource setMenuItems:menuItems];
         
         CCHMenuViewController *menuViewController = [[CCHMenuViewController alloc] init];
         menuViewController.dataSource = dataSource;
@@ -43,50 +54,6 @@
     }
     
     [self.view addGestureRecognizer:self.slidingViewController.panGesture];
-}
-
-#pragma mark - Menu items management
-
-- (NSArray *)menuItems {
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"menuItems"
-                                                         ofType:@"plist"];
-    
-    NSArray *fileContent = [NSArray arrayWithContentsOfFile:filePath];
-    NSArray *menuItems = [self createMenuItemsFromArray:fileContent];
-    
-    return [self removeDisabledFeaturesFromMenuItems:menuItems];
-}
-
-- (NSArray *)createMenuItemsFromArray:(NSArray *)fileContent {
-    NSMutableArray *menuItems = [NSMutableArray arrayWithCapacity:[fileContent count]];
-    
-    [fileContent enumerateObjectsUsingBlock:^(NSDictionary *item, NSUInteger index, BOOL *stop) {
-        CCHMenuItem *menuItem = [[CCHMenuItem alloc] init];
-        menuItem.title = item[@"title"];
-        menuItem.subTitle = item[@"subTitle"];
-        menuItem.icon = [UIImage imageNamed:item[@"iconName"]];
-        menuItem.backgroundImage = [UIImage imageNamed:item[@"backgroundImageName"]];
-        menuItem.rowHeight = [item[@"rowHeight"] floatValue];
-        menuItem.tapEventHandlerClassName = item[@"tapEventHandler"];
-        menuItem.featureName = item[@"featureName"];
-        
-        [menuItems addObject:menuItem];
-    }];
-    
-    return [menuItems copy];
-}
-
-- (NSArray *)removeDisabledFeaturesFromMenuItems:(NSArray *)allItems {
-    NSMutableArray *enabledMenuItems = [NSMutableArray array];
-    
-    [allItems enumerateObjectsUsingBlock:^(CCHMenuItem *menuItem, NSUInteger index, BOOL *stop) {
-        NSArray *features = [[CCHFeatureManager sharedInstance] features];
-        if ([features containsObject:menuItem.featureName]) {
-            [enabledMenuItems addObject:menuItem];
-        }
-    }];
-    
-    return enabledMenuItems;
 }
 
 @end

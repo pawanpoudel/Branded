@@ -37,6 +37,16 @@
 		15137EC218FDAC73005E32B9 /* CCHMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 15137EC118FDAC73005E32B9 /* CCHMenuItem.m */; };
 		15137EC818FDACB3005E32B9 /* CCHMenuTableDataSourceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 15137EC518FDACB3005E32B9 /* CCHMenuTableDataSourceSpec.m */; };
 		15137EC918FDACB3005E32B9 /* CCHMenuItemSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 15137EC718FDACB3005E32B9 /* CCHMenuItemSpec.m */; };
+		15268C1C190C9E4F00950B3F /* CCHMenuItemsPlistReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 15268C1B190C9E4F00950B3F /* CCHMenuItemsPlistReader.m */; };
+		15268C1D190C9E4F00950B3F /* CCHMenuItemsPlistReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 15268C1B190C9E4F00950B3F /* CCHMenuItemsPlistReader.m */; };
+		15268C1E190C9E4F00950B3F /* CCHMenuItemsPlistReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 15268C1B190C9E4F00950B3F /* CCHMenuItemsPlistReader.m */; };
+		15268C20190C9F1900950B3F /* CCHMenuItemsPlistReaderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 15268C1F190C9F1900950B3F /* CCHMenuItemsPlistReaderSpec.m */; };
+		15268C25190CAD1400950B3F /* CCHFakeMenuItemsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 15268C24190CAD1400950B3F /* CCHFakeMenuItemsReader.m */; };
+		15268C27190CB2B900950B3F /* CCHFakeMenuItemsReaderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 15268C26190CB2B900950B3F /* CCHFakeMenuItemsReaderSpec.m */; };
+		15268C2A190CC64900950B3F /* CCHMenuItemBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 15268C29190CC64900950B3F /* CCHMenuItemBuilder.m */; };
+		15268C2B190CC64900950B3F /* CCHMenuItemBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 15268C29190CC64900950B3F /* CCHMenuItemBuilder.m */; };
+		15268C2C190CC64900950B3F /* CCHMenuItemBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 15268C29190CC64900950B3F /* CCHMenuItemBuilder.m */; };
+		15268C2E190CCC3600950B3F /* CCHMenuItemBuilderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 15268C2D190CCC3600950B3F /* CCHMenuItemBuilderSpec.m */; };
 		1586C8D6190C763100C330BE /* CCHAppSettingSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1586C8D5190C763100C330BE /* CCHAppSettingSpec.m */; };
 		1586C8D9190C78D600C330BE /* CCHAppSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 1586C8D8190C78D600C330BE /* CCHAppSetting.m */; };
 		1586C8DA190C78D600C330BE /* CCHAppSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 1586C8D8190C78D600C330BE /* CCHAppSetting.m */; };
@@ -176,6 +186,16 @@
 		15137EC518FDACB3005E32B9 /* CCHMenuTableDataSourceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHMenuTableDataSourceSpec.m; sourceTree = "<group>"; };
 		15137EC718FDACB3005E32B9 /* CCHMenuItemSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHMenuItemSpec.m; sourceTree = "<group>"; };
 		15137ECB18FDB02E005E32B9 /* CCHMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHMacros.h; sourceTree = "<group>"; };
+		15268C19190C9DCA00950B3F /* CCHMenuItemsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHMenuItemsReader.h; sourceTree = "<group>"; };
+		15268C1A190C9E4F00950B3F /* CCHMenuItemsPlistReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHMenuItemsPlistReader.h; sourceTree = "<group>"; };
+		15268C1B190C9E4F00950B3F /* CCHMenuItemsPlistReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHMenuItemsPlistReader.m; sourceTree = "<group>"; };
+		15268C1F190C9F1900950B3F /* CCHMenuItemsPlistReaderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHMenuItemsPlistReaderSpec.m; sourceTree = "<group>"; };
+		15268C23190CAD1400950B3F /* CCHFakeMenuItemsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHFakeMenuItemsReader.h; sourceTree = "<group>"; };
+		15268C24190CAD1400950B3F /* CCHFakeMenuItemsReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHFakeMenuItemsReader.m; sourceTree = "<group>"; };
+		15268C26190CB2B900950B3F /* CCHFakeMenuItemsReaderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHFakeMenuItemsReaderSpec.m; sourceTree = "<group>"; };
+		15268C28190CC64900950B3F /* CCHMenuItemBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHMenuItemBuilder.h; sourceTree = "<group>"; };
+		15268C29190CC64900950B3F /* CCHMenuItemBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHMenuItemBuilder.m; sourceTree = "<group>"; };
+		15268C2D190CCC3600950B3F /* CCHMenuItemBuilderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHMenuItemBuilderSpec.m; sourceTree = "<group>"; };
 		1586C8D5190C763100C330BE /* CCHAppSettingSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHAppSettingSpec.m; sourceTree = "<group>"; };
 		1586C8D7190C78D600C330BE /* CCHAppSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHAppSetting.h; sourceTree = "<group>"; };
 		1586C8D8190C78D600C330BE /* CCHAppSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHAppSetting.m; sourceTree = "<group>"; };
@@ -364,6 +384,11 @@
 				15137E7C18FCCBCC005E32B9 /* CCHMenuViewController.m */,
 				15137EBC18FDAC08005E32B9 /* CCHMenuTableDataSource.h */,
 				15137EBD18FDAC08005E32B9 /* CCHMenuTableDataSource.m */,
+				15268C19190C9DCA00950B3F /* CCHMenuItemsReader.h */,
+				15268C1A190C9E4F00950B3F /* CCHMenuItemsPlistReader.h */,
+				15268C1B190C9E4F00950B3F /* CCHMenuItemsPlistReader.m */,
+				15268C28190CC64900950B3F /* CCHMenuItemBuilder.h */,
+				15268C29190CC64900950B3F /* CCHMenuItemBuilder.m */,
 				15137E7D18FCCBCC005E32B9 /* CCHSlidingNavigationController.h */,
 				15137E7E18FCCBCC005E32B9 /* CCHSlidingNavigationController.m */,
 				15137E7F18FCCBCC005E32B9 /* menuItems.plist */,
@@ -521,6 +546,11 @@
 			isa = PBXGroup;
 			children = (
 				15137EC518FDACB3005E32B9 /* CCHMenuTableDataSourceSpec.m */,
+				15268C1F190C9F1900950B3F /* CCHMenuItemsPlistReaderSpec.m */,
+				15268C2D190CCC3600950B3F /* CCHMenuItemBuilderSpec.m */,
+				15268C23190CAD1400950B3F /* CCHFakeMenuItemsReader.h */,
+				15268C24190CAD1400950B3F /* CCHFakeMenuItemsReader.m */,
+				15268C26190CB2B900950B3F /* CCHFakeMenuItemsReaderSpec.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -955,8 +985,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15268C2A190CC64900950B3F /* CCHMenuItemBuilder.m in Sources */,
 				15137E4C18FCC50E005E32B9 /* main.m in Sources */,
 				15137E8518FCCBCC005E32B9 /* CCHSlidingNavigationController.m in Sources */,
+				15268C1C190C9E4F00950B3F /* CCHMenuItemsPlistReader.m in Sources */,
 				15137EA018FCCFF3005E32B9 /* UIImage+Helper.m in Sources */,
 				15A0726C18FDBCAD000EF640 /* CCHFeatureManager.m in Sources */,
 				15A072EA18FDD25F000EF640 /* CCHLoginManager.m in Sources */,
@@ -981,7 +1013,11 @@
 				15A0727018FDBDAF000EF640 /* CCHFeatureManagerSpec.m in Sources */,
 				15137EC818FDACB3005E32B9 /* CCHMenuTableDataSourceSpec.m in Sources */,
 				1586C8D6190C763100C330BE /* CCHAppSettingSpec.m in Sources */,
+				15268C27190CB2B900950B3F /* CCHFakeMenuItemsReaderSpec.m in Sources */,
+				15268C20190C9F1900950B3F /* CCHMenuItemsPlistReaderSpec.m in Sources */,
+				15268C25190CAD1400950B3F /* CCHFakeMenuItemsReader.m in Sources */,
 				15137EC918FDACB3005E32B9 /* CCHMenuItemSpec.m in Sources */,
+				15268C2E190CCC3600950B3F /* CCHMenuItemBuilderSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -989,8 +1025,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15268C2B190CC64900950B3F /* CCHMenuItemBuilder.m in Sources */,
 				15A0727418FDC365000EF640 /* main.m in Sources */,
 				15A0727518FDC365000EF640 /* CCHSlidingNavigationController.m in Sources */,
+				15268C1D190C9E4F00950B3F /* CCHMenuItemsPlistReader.m in Sources */,
 				15A0727618FDC365000EF640 /* UIImage+Helper.m in Sources */,
 				15A0727718FDC365000EF640 /* CCHFeatureManager.m in Sources */,
 				15A072EB18FDD25F000EF640 /* CCHLoginManager.m in Sources */,
@@ -1012,8 +1050,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15268C2C190CC64900950B3F /* CCHMenuItemBuilder.m in Sources */,
 				15A072A318FDC9AE000EF640 /* main.m in Sources */,
 				15A072A418FDC9AE000EF640 /* CCHSlidingNavigationController.m in Sources */,
+				15268C1E190C9E4F00950B3F /* CCHMenuItemsPlistReader.m in Sources */,
 				15A072A518FDC9AE000EF640 /* UIImage+Helper.m in Sources */,
 				15A072A618FDC9AE000EF640 /* CCHFeatureManager.m in Sources */,
 				15A072EC18FDD25F000EF640 /* CCHLoginManager.m in Sources */,
