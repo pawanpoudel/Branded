@@ -44,6 +44,15 @@ describe(@"CCHMenuItemBuilder", ^{
         [[theValue(menuItem.rowHeight) should] equal:theValue([rawMenuItem[@"rowHeight"] floatValue])];
         [[menuItem.tapEventHandlerClassName should] equal:rawMenuItem[@"tapEventHandler"]];
     });
+    
+    it(@"returns menu items for enabled features only", ^{
+        enabledFeatures = @[@"feature1"];
+        menuItems = [menuItemBuilder menuItemsForEnabledFeatures:enabledFeatures];
+        CCHMenuItem *menuItem = menuItems[0];
+        
+        [[theValue([menuItems count]) should] equal:theValue([enabledFeatures count])];
+        [[menuItem.featureName should] equal:@"feature1"];
+    });
 });
 
 SPEC_END
