@@ -11,7 +11,9 @@
 @implementation CCHMenuItemsPlistReader
 
 - (NSArray *)readMenuItems {
-    return @[];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:self.plistToReadFrom
+                                                         ofType:@"plist"];
+    return [NSArray arrayWithContentsOfFile:filePath];
 }
 
 @end

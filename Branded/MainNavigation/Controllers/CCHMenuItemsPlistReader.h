@@ -10,4 +10,6 @@
 
 @interface CCHMenuItemsPlistReader : NSObject <CCHMenuItemsReader>
 
+@property (nonatomic) NSString *plistToReadFrom;
+
 @end
