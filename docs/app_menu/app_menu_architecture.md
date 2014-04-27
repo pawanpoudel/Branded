@@ -55,3 +55,16 @@ time) to `CCHMenuItemBuilder` and everything should work just fine.
 <a name="how_disabled_features_get_removed"/>
 How disabled features get removed from the menu
 -----------------------------------------------
+
+Which items get included in the menu is determined primarily by `CCHFeatureManager`.
+It keeps a list of all features enabled in an app. MDFeatureManager reads that
+list from a file named *features.plist* included in app bundle. Therefore, each
+application target must include its own list of enabled features in *features.plist*
+file.
+
+While constructing `CCHMenuItem` objects, `CCHMenuItemBuilder` expects a list of
+enabled features to be provided. It uses that list to remove items that correspond
+to the disabled features. The plist file that `CCHMenuItemsPlistReader` reads
+from contains metadata for all menu items regardless of whether the corresponding
+features are enabled or not. As a result, this filtering process is important to
+not show features that are disabled in a particular app.
