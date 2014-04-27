@@ -37,8 +37,7 @@ describe(@"CCHAppSetting", ^{
     describe(@".rootURL", ^{
         context(@"with scheme and host", ^{
             context(@"with port", ^{
-                NSString const *port = @"443";
-                
+                NSString const *port = @"443";                
                 let(settingsDict, ^{ return @{@"urlComponents": @{@"scheme": scheme, @"host": host, @"port": port}}; });
                 let(expected, ^{ return [NSString stringWithFormat:@"%@://%@:%@", scheme, host, port]; });
                 
@@ -54,6 +53,27 @@ describe(@"CCHAppSetting", ^{
                 it(@"constructs the full URL correctly", ^{
                     [[[[appSetting rootURL] absoluteString] should] equal:expected];
                 });
+            });
+        });
+    });
+    
+    describe(@".apiRootURL", ^{
+        NSString const *apiEndPoint = @"api/v5";
+        let(expected, ^{ return [NSString stringWithFormat:@"%@://%@/%@", scheme, host, apiEndPoint]; });
+        
+        context(@"with leading slash", ^{
+            let(settingsDict, ^{ return @{@"urlComponents": @{@"scheme": scheme, @"host": host, @"apiEndPoint": [NSString stringWithFormat:@"/%@", apiEndPoint]}}; });
+            
+            it(@"constructs the full API root URL correctly", ^{
+                [[[[appSetting apiRootURL] absoluteString] should] equal:expected];
+            });
+        });
+        
+        context(@"without leading slash", ^{
+            let(settingsDict, ^{ return @{@"urlComponents": @{@"scheme": scheme, @"host": host, @"apiEndPoint": apiEndPoint}}; });
+            
+            it(@"constructs the full API root URL correctly", ^{
+                [[[[appSetting apiRootURL] absoluteString] should] equal:expected];
             });
         });
     });
