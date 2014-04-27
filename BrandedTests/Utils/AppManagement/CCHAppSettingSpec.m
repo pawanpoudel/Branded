@@ -19,6 +19,14 @@ describe(@"CCHAppSetting", ^{
             [[appSetting1 should] beIdenticalTo:appSetting2];
         });
     });
+    
+    describe(@".initWithSettings:", ^{
+        it(@"returns a new instance each time", ^{
+            CCHAppSetting *appSetting1 = [[CCHAppSetting alloc] initWithSettings:nil];
+            CCHAppSetting *appSetting2 = [[CCHAppSetting alloc] initWithSettings:nil];
+            [[appSetting1 shouldNot] beIdenticalTo:appSetting2];
+        });
+    });
 });
 
 SPEC_END

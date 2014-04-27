@@ -9,7 +9,7 @@
 @interface CCHAppSetting : NSObject
 
 + (instancetype)sharedInstance;
-- (instancetype)initWithDictionary:(NSDictionary *)settings;
+- (instancetype)initWithSettings:(NSDictionary *)settings;
 
 - (NSString *)host;
 - (NSURL *)rootURL;

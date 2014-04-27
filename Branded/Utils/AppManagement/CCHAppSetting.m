@@ -17,17 +17,19 @@
 + (instancetype)sharedInstance {
     static CCHAppSetting *appSetting = nil;
     static dispatch_once_t onceToken;
+    
     dispatch_once(&onceToken, ^{
         NSString *path = [[NSBundle mainBundle] pathForResource:@"appSetting"
                                                          ofType:@"plist"];
+        
         NSDictionary *setting = [NSDictionary dictionaryWithContentsOfFile:path];
-        appSetting = [[self alloc] initWithDictionary:setting];
+        appSetting = [[self alloc] initWithSettings:setting];
     });
     
     return appSetting;
 }
 
-- (instancetype)initWithDictionary:(NSDictionary *)settings {
+- (instancetype)initWithSettings:(NSDictionary *)settings {
     self = [super init];
     if (self) {
         self.settings = settings;
