@@ -42,6 +42,7 @@
 		15268C1E190C9E4F00950B3F /* CCHMenuItemsPlistReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 15268C1B190C9E4F00950B3F /* CCHMenuItemsPlistReader.m */; };
 		15268C20190C9F1900950B3F /* CCHMenuItemsPlistReaderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 15268C1F190C9F1900950B3F /* CCHMenuItemsPlistReaderSpec.m */; };
 		15268C25190CAD1400950B3F /* CCHFakeMenuItemsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 15268C24190CAD1400950B3F /* CCHFakeMenuItemsReader.m */; };
+		15268C27190CB2B900950B3F /* CCHFakeMenuItemsReaderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 15268C26190CB2B900950B3F /* CCHFakeMenuItemsReaderSpec.m */; };
 		1586C8D6190C763100C330BE /* CCHAppSettingSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1586C8D5190C763100C330BE /* CCHAppSettingSpec.m */; };
 		1586C8D9190C78D600C330BE /* CCHAppSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 1586C8D8190C78D600C330BE /* CCHAppSetting.m */; };
 		1586C8DA190C78D600C330BE /* CCHAppSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 1586C8D8190C78D600C330BE /* CCHAppSetting.m */; };
@@ -187,6 +188,7 @@
 		15268C1F190C9F1900950B3F /* CCHMenuItemsPlistReaderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHMenuItemsPlistReaderSpec.m; sourceTree = "<group>"; };
 		15268C23190CAD1400950B3F /* CCHFakeMenuItemsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHFakeMenuItemsReader.h; sourceTree = "<group>"; };
 		15268C24190CAD1400950B3F /* CCHFakeMenuItemsReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHFakeMenuItemsReader.m; sourceTree = "<group>"; };
+		15268C26190CB2B900950B3F /* CCHFakeMenuItemsReaderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHFakeMenuItemsReaderSpec.m; sourceTree = "<group>"; };
 		1586C8D5190C763100C330BE /* CCHAppSettingSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHAppSettingSpec.m; sourceTree = "<group>"; };
 		1586C8D7190C78D600C330BE /* CCHAppSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHAppSetting.h; sourceTree = "<group>"; };
 		1586C8D8190C78D600C330BE /* CCHAppSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHAppSetting.m; sourceTree = "<group>"; };
@@ -538,6 +540,7 @@
 				15268C1F190C9F1900950B3F /* CCHMenuItemsPlistReaderSpec.m */,
 				15268C23190CAD1400950B3F /* CCHFakeMenuItemsReader.h */,
 				15268C24190CAD1400950B3F /* CCHFakeMenuItemsReader.m */,
+				15268C26190CB2B900950B3F /* CCHFakeMenuItemsReaderSpec.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -999,6 +1002,7 @@
 				15A0727018FDBDAF000EF640 /* CCHFeatureManagerSpec.m in Sources */,
 				15137EC818FDACB3005E32B9 /* CCHMenuTableDataSourceSpec.m in Sources */,
 				1586C8D6190C763100C330BE /* CCHAppSettingSpec.m in Sources */,
+				15268C27190CB2B900950B3F /* CCHFakeMenuItemsReaderSpec.m in Sources */,
 				15268C20190C9F1900950B3F /* CCHMenuItemsPlistReaderSpec.m in Sources */,
 				15268C25190CAD1400950B3F /* CCHFakeMenuItemsReader.m in Sources */,
 				15137EC918FDACB3005E32B9 /* CCHMenuItemSpec.m in Sources */,
