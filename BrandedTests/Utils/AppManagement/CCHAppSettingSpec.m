@@ -37,7 +37,7 @@ describe(@"CCHAppSetting", ^{
     describe(@".rootURL", ^{
         context(@"with scheme and host", ^{
             context(@"with port", ^{
-                NSString const *port = @"443";                
+                NSString const *port = @"443";
                 let(settingsDict, ^{ return @{@"urlComponents": @{@"scheme": scheme, @"host": host, @"port": port}}; });
                 let(expected, ^{ return [NSString stringWithFormat:@"%@://%@:%@", scheme, host, port]; });
                 
@@ -77,6 +77,14 @@ describe(@"CCHAppSetting", ^{
             });
         });
     });
+    
+    describe(@".host", ^{
+        let(settingsDict, ^{ return @{@"urlComponents": @{@"host": host}}; });
+        
+        it(@"returns the correct host", ^{
+            [[[appSetting host] should] equal:host];
+        });
+    });    
 });
 
 SPEC_END
