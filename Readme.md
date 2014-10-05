@@ -12,15 +12,14 @@ of the app that are not visible to the users such as:
 
 This is possible because each app has its own target. As a result, anything that
 can be configured via [Info.plist](http://goo.gl/QgfMhM) is readily available for
-customization just by using a separate Info.plist file for each target.
-
-Figure below shows three different apps that were generated from this code base.
+customization just by using a separate Info.plist file for each target. Figure 
+below shows three different apps that were generated from this code base.
 
 ![](docs/images/branded_app.png)
 
 Building
 ---------
 
-Clone the repository, then run `pod install` from [terminal](http://en.wikipedia.org/wiki/Terminal_(OS_X).
+Clone the repository, then run `pod install` from [terminal](http://en.wikipedia.org/wiki/Terminal_(OS_X)).
 Once all pods specified in the [Podfile](http://guides.cocoapods.org/syntax/podfile.html)
 are installed, open the `Branded.xcworkspace` file in Xcode and run (⌘R).
